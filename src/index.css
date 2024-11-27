@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Archivo+Black&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Archivo+Black&family=Poppins:wght@100;400&family=Quicksand:wght@300..700&display=swap");
+
+/* font-family: "Amita", serif; */
+/* font-family: "Quicksand", sans-serif; */
+/* font-family: "Poppins", sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Nav_sec {
+  position: relative;
+}
+
+.Nav_sec::before {
+  content: "";
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAAdCAMAAACOhmlvAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMA4J9AIGDvEM+/f1Cv5jCPbkvDkNMoJoGbAAABQElEQVRYw+3Y7WqEMBCF4ZlMPjSJdXWb+7/VQhc6sGmRmpjzx/cKHo4MSKjcvbqXuJd4j0gkRTMVVJxjEkExFPBTSIbL6LxxQQmDGQqo+zC+jMubRIRh1IA6N5cxTS5gGTWg/iLl+rIQiqGA4+zVWxgLZCgAvgWc8QLAt8gnGBiAIubSv1lQDAWcSKbSN04NDARAc1z65R8NDBBAC9GXTq0BxVBAUzb3uU8LZdQA0J2yABkKaM/5tvuMWIYC2guxnM8EFEMBHbMGcp81AwbQ5MwvziQohgIuSLj8L3Z0QcIwgOYYvoMyQABFwHf4ZiyHgOUAMOhQp8sZG7f+Wbd3/M5ohAa0LX8ClgcNKrh88D44pG3/XbDRyIIzXBl8doFGZuM7gqOl8VmJ6z4x+4U/9zUmS4CCPDOz9555fqaGD/EF5JdWu0QMxwoAAAAASUVORK5CYII=");
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 8px;
+  background-size: 80px;
+  background-position: bottom;
+  left: 0;
+  z-index: 1;
+}
+
+p {
+  margin-bottom: 0;
+}
+button > i {
+  padding-left: 1px;
+}
+
+
+
+
+.carousel-indicators {
+  display: none;
+}
+.carousel-inner {
+  height: 100vh;
+}
+.carousel-caption {
+  display: block !important; /* Force display of captions */
+  text-align: center;
+  color: white;
+  bottom: 20%; /* Adjust positioning */
+}
+
+.carousel-caption h1,
+.carousel-caption h5,
+.carousel-caption p {
+  color: white;
+}
+
+.itemm {
+  padding-bottom: 10%;
+}
+.itemm > h1 {
+  font-size: 96px;
+  line-height: 1.1;
+  color: white;
+  font-family: "Amita", serif;
+  font-weight: bolder;
+}
+.itemm > h5 {
+  font-size: 35px;
+  color: white;
+  font-family: "Amita", serif;
+  font-weight: bolder;
+}
+.itemm > p {
+  font-size: 19px;
+  font-weight: 400;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Default button */
+
+.buttondef {
+  appearance: none;
+  background-color: #5acac7;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 45px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.buttondef:disabled {
+  pointer-events: none;
+}
+
+.buttondef:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.buttondef:active {
+  box-shadow: none;
+}
+
+/* Hover Button */
+
+.buttonhov {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  color: #3b3b3b;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 45px;
+  padding: 6px 20px;
+  text-align: center;
+}
+
+.buttonhov:disabled {
+  pointer-events: none;
+}
+
+.buttonhov:hover {
+  color: #fff;
+  background-color: #5acac7;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.buttonhov:active {
+  box-shadow: none;
+}
+
+/* Party */
+
+.containerParty {
+  background-image: url("https://restroking.dexignzone.com/react/static/media/bg5.74609cce.jpg");
+  height: 100%;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+
+/* card */
+
+.Card-:hover {
+  transform: scale(1.06) rotate(-3deg);
+  transition: all 0.22s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.Card-::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background-image: linear-gradient(0deg, #001817, rgba(0, 24, 23, 0));
+  border-radius: 4%;
+}
+.Card- {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4%;
+  top: -50px;
+}
+
+.cards_grid {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.Card- > img {
+  border-radius: 10px;
+  position: relative;
+  object-fit: cover;
+}
+.card-body {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  color: white;
+  bottom: 29px;
+  font-family: "Amita", serif;
+  z-index: 1;
+}
+.line {
+  border: 2px solid #5acac7;
+  width: 60px;
+  margin-bottom: 2%;
+}
+.card-title {
+  font-size: 30px;
+}
+/* CAKE */
+.d_Card > div {
+  padding: 10px;
+}
+.d_img > img {
+  max-height: 110px;
+}
+
+.d_Head {
+  font-size: 32px;
+  color: #5acac7;
+  font-family: "Amita", serif;
+  font-weight: bold;
+}
+.d_body {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  padding-top: 0;
+  font-weight: 400;
+  font-size: 24px;
+  color: #222222;
+}
+.d_body > span {
+  font-weight: 700;
+  border-bottom: 1px dashed;
+}
+.d_foot {
+  font-size: 23px;
+  color: #222222;
+}
+
+@media (max-width: 1024px) {
+  .Card- > img {
+    width: 100%;
+  }
+  .itemm > h1 {
+    font-size: 70px;
+  }
+}
+/* tab */
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 80vh;
+  }
+  .itemm {
+    padding-bottom: 0;
+  }
+
+  .itemm > h1 {
+    font-size: 40px;
+  }
+
+  .itemm > h5 {
+    font-size: 25px;
+  }
+
+  .itemm > p {
+    font-size: 10px;
+  }
+  .Card- > img {
+    max-height: 100%;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+  .card-body > button {
+    font-size: 11px;
+    min-height: 31px;
+  }
+}
+
+/* phone */
+@media (max-width: 480px) {
+  .carousel-inner {
+    height: 60vh;
+  }
+
+  .itemm {
+    padding-bottom: 0;
+  }
+
+  .itemm > h1 {
+    font-size: 25px;
+  }
+
+  .itemm > h5 {
+    font-size: 15px;
+  }
+
+  .itemm > p {
+    font-size: 14px;
+  }
+
+  .buttondef,
+  .buttonhov {
+    font-size: 14px;
+    padding: 8px 15px;
+    min-height: 30px;
+  }
+  .cards_grid {
+    flex-direction: column;
+  }
+}
